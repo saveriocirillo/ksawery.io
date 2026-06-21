@@ -9,6 +9,7 @@ export default defineConfig({
 			customCss: ['./src/styles/custom.css'],
 			components: {
 				Header: './src/components/CustomHeader.astro',
+				Hero: './src/components/CustomHero.astro',
 			},
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/saveriocirillo' },
