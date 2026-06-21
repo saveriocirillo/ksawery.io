@@ -11,10 +11,10 @@ export default defineConfig({
 				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/saverio-cirillo' },
 			],
 			sidebar: [
-				{ label: 'Portfolio', link: '/portfolio/' },
+				{ label: 'Work', link: '/work/' },
 				{ label: 'Blog', link: '/blog/' },
-				{ label: 'Experience', link: '/experience/' },
 				{ label: 'Running', link: '/running/' },
+				{ label: 'Tennis', link: '/tennis/' },
 			],
 		}),
 	],
