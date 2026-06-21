@@ -1,3 +1,7 @@
+/* Center hero content when there is no image */
+.hero .sl-flex.stack { justify-content: center; }
+.hero .sl-flex.copy { align-items: center; text-align: center; }
+
 /* Blue tone accents for the four landing page cards */
 .sl-link-card:nth-child(1) { border-top: 2px solid #1d4ed8; }
 .sl-link-card:nth-child(2) { border-top: 2px solid #2563eb; }

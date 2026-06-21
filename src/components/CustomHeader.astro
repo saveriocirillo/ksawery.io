@@ -2,8 +2,7 @@
 import ThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro';
 ---
 
-<header class="custom-header">
-  <a href="/" class="site-title">Saverio Cirillo</a>
+<div class="custom-header">
   <div class="header-icons">
 
     <a href="https://github.com/saveriocirillo" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="header-icon">
@@ -27,32 +26,15 @@ import ThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro';
     <ThemeSelect />
 
   </div>
-</header>
+</div>
 
 <style>
   .custom-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0 var(--sl-content-pad-x, 1.5rem);
-    height: var(--sl-nav-height, 3.5rem);
-    border-bottom: 1px solid var(--sl-color-hairline-shade);
-    background-color: var(--sl-color-bg-nav);
-    position: sticky;
-    top: 0;
-    z-index: var(--sl-z-index-navbar, 10);
-  }
-
-  .site-title {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--sl-color-text-accent);
-    text-decoration: none;
-    letter-spacing: -0.01em;
-  }
-
-  .site-title:hover {
-    color: var(--sl-color-accent);
+    height: 100%;
   }
 
   .header-icons {
