@@ -10,6 +10,7 @@ export default defineConfig({
 			components: {
 				Header: './src/components/CustomHeader.astro',
 				Hero: './src/components/CustomHero.astro',
+				Footer: './src/components/CustomFooter.astro',
 			},
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/saveriocirillo' },
