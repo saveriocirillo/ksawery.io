@@ -1,0 +1,33 @@
+---
+const year = new Date().getFullYear();
+---
+<footer class="custom-footer">
+  <p>
+    © {year} Saverio Cirillo · Views expressed are my own · Built with
+    <a href="https://astro.build" target="_blank" rel="noopener noreferrer">Astro</a>
+  </p>
+</footer>
+
+<style>
+  .custom-footer {
+    border-top: 1px solid var(--sl-color-hairline-shade);
+    padding: 1.5rem var(--sl-content-pad-x, 1.5rem);
+    text-align: center;
+  }
+
+  .custom-footer p {
+    font-size: 0.8rem;
+    color: var(--sl-color-gray-3);
+    margin: 0;
+  }
+
+  .custom-footer a {
+    color: var(--sl-color-gray-3);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .custom-footer a:hover {
+    color: var(--sl-color-text);
+  }
+</style>
