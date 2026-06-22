@@ -1,13 +1,17 @@
 ---
+import Search from '@astrojs/starlight/components/Search.astro';
 ---
 <div class="hero-layout">
   <div class="hero-left">
     <h1 id="_top">Saverio Cirillo</h1>
-    <p class="hero-tagline">Senior Technical Writer</p>
+    <div class="hero-search">
+      <Search />
+    </div>
   </div>
   <div class="bio-card">
     Senior Technical Writer with 8 years in tech. Based in Poland, originally from Italy.
     When I'm not building docs, I'm probably running somewhere on the trails.
+    Here I keep professional milestones, race stories, book lists and ideas.
   </div>
 </div>
 
@@ -17,32 +21,30 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding: 3rem 0 2rem;
-    align-items: start;
+    align-items: stretch;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .hero-left h1 {
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
     font-weight: 700;
-    line-height: 1.05;
-    margin: 0 0 0.75rem;
+    line-height: 1.1;
+    margin: 0 0 1rem;
     color: var(--sl-color-text);
   }
 
-  .hero-tagline {
-    font-size: 1.1rem;
-    color: var(--sl-color-gray-2);
-    margin: 0;
-  }
-
   .bio-card {
-    display: block;
     border: 1px solid var(--sl-color-hairline);
     border-top: 2px solid #15803d;
     border-radius: 0.5rem;
-    padding: 1.25rem;
-    text-decoration: none;
+    padding: 1rem;
     color: var(--sl-color-gray-2);
-    font-size: 0.9rem;
-    line-height: 1.7;
+    font-size: 0.8rem;
+    line-height: 1.6;
   }
 </style>
