@@ -5,6 +5,10 @@
   ],
   "rewrites": [
     {
+      "source": "/portfolio/",
+      "destination": "https://krk-plays-tennis-docs.vercel.app/portfolio/"
+    },
+    {
       "source": "/portfolio/:path*",
       "destination": "https://krk-plays-tennis-docs.vercel.app/portfolio/:path*"
     }
