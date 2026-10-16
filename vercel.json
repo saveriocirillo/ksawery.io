@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/portfolio", "destination": "/portfolio/", "permanent": true }
+  ],
+  "rewrites": [
+    {
+      "source": "/portfolio/:path*",
+      "destination": "https://krk-plays-tennis-docs.vercel.app/portfolio/:path*"
+    }
+  ]
+}
