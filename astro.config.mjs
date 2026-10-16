@@ -18,6 +18,7 @@ export default defineConfig({
 			],
 			sidebar: [
 				{ label: 'Work', link: '/work/' },
+				{ label: 'Portfolio', link: '/portfolio/' },
 				{ label: 'Blog', link: '/blog/' },
 				{ label: 'Running & Tennis', link: '/running/' },
 				{ label: 'Books & Places', link: '/books/' },
