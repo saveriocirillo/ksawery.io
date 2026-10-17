@@ -1,0 +1,17 @@
+---
+// Shows the date under the title of posts, the pages with a `date` in their frontmatter.
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { formatDate } from '../lib/posts';
+
+const { date } = Astro.locals.starlightRoute.entry.data;
+---
+
+<Default />
+{date && <p class="post-date">{formatDate(date)}</p>}
+
+<style>
+	.post-date {
+		margin-top: 0.5rem;
+		color: var(--sl-color-gray-2);
+	}
+</style>
