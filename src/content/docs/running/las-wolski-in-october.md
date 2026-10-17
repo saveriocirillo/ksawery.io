@@ -1,9 +1,8 @@
 ---
 title: October morning in Las Wolski
-description: A morning run in Las Wolski, with October colors and fog lifting over the forest.
+description: Morning colors, fog lifting over the forest, and a plan to run more trails.
+date: 2026-10-17
 ---
-
-*October 17, 2026*
 
 I missed Las Wolski in the morning, with its October colors.
 

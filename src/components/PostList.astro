@@ -1,0 +1,52 @@
+---
+// Lists the posts in a section folder, newest first. Add a post by adding a Markdown
+// file with a `date` to the folder: this list updates by itself.
+import { formatDate, getPosts } from '../lib/posts';
+
+interface Props {
+	section: string;
+}
+
+const posts = await getPosts(Astro.props.section);
+---
+
+{
+	posts.length > 0 ? (
+		<ul class="post-list">
+			{posts.map((post) => (
+				<li>
+					<a href={`/${post.id}/`}>{post.data.title}</a>
+					<span class="post-date">{formatDate(post.data.date!)}</span>
+					{post.data.description && <p>{post.data.description}</p>}
+				</li>
+			))}
+		</ul>
+	) : (
+		<p>No stories yet. The first one is on its way.</p>
+	)
+}
+
+<style>
+	.post-list {
+		list-style: none;
+		padding: 0;
+	}
+
+	.post-list li + li {
+		margin-top: 1.5rem;
+	}
+
+	.post-list a {
+		font-weight: 600;
+	}
+
+	.post-date {
+		display: block;
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-2);
+	}
+
+	.post-list p {
+		margin-top: 0.25rem;
+	}
+</style>
