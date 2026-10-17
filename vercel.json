@@ -1,9 +1,14 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
-    { "source": "/portfolio", "destination": "/portfolio/", "permanent": true }
+    { "source": "/portfolio", "destination": "/portfolio/", "permanent": true },
+    { "source": "/krk-plays-tennis-api", "destination": "/krk-plays-tennis-api/", "permanent": true }
   ],
   "rewrites": [
+    {
+      "source": "/krk-plays-tennis-api/(.*)",
+      "destination": "https://krk-plays-tennis-docs.vercel.app/krk-plays-tennis-api/$1"
+    },
     {
       "source": "/portfolio/(.*)",
       "destination": "https://krk-plays-tennis-docs.vercel.app/portfolio/$1"
